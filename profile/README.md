@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./logofull.png" height="200" alt="Credda" />
+  <img src="logofull.png" height="200" alt="Credda" />
 
   <br />
   <br />
