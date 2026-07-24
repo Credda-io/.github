@@ -9,7 +9,7 @@ This policy is the org-wide default for every repository under
 
 ## Reporting a vulnerability
 
-**Email [security@credda.io](mailto:security@credda.io)** with the details. If you
+**Email [martin@credda.io](mailto:martin@credda.io?subject=Security%20disclosure)** (subject “Security disclosure”) with the details. If you
 prefer, you can also open a private
 [GitHub security advisory](https://docs.github.com/en/code-security/security-advisories)
 on the relevant repository.
@@ -75,7 +75,7 @@ modify, or exfiltrate other people's data, do not degrade the service for others
 and give us a reasonable window to remediate before any public disclosure.
 
 If you are unsure whether something is in scope or in bounds, email
-**security@credda.io** and ask first.
+**martin@credda.io** and ask first.
 
 ## Our commitments
 

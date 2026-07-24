@@ -24,7 +24,7 @@ project or its community in public.
 
 ## Reporting
 
-Report unacceptable behaviour to **[conduct@credda.io](mailto:conduct@credda.io)**.
+Report unacceptable behaviour to **[martin@credda.io](mailto:martin@credda.io?subject=Code%20of%20conduct)** (subject “Code of conduct” — it reaches the founder directly).
 Reports are handled confidentially. The maintainers will review every report,
 respond as promptly as we reasonably can, and may warn, remove content, or ban a
 participant temporarily or permanently depending on severity. Maintainers who do

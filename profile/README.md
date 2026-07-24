@@ -132,7 +132,7 @@ will not describe it as such until an auditor says so.
 ## Security
 
 Found a vulnerability? See our [security policy](../SECURITY.md) and email
-**security@credda.io**. Please do not open a public issue for a security report.
+**martin@credda.io** (subject “Security disclosure”). Please do not open a public issue for a security report.
 
 <div align="center">
   <br />
