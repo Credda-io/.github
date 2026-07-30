@@ -18,7 +18,7 @@ What you expected to happen instead.
 
 **Request ID**
 If it came from an API call, paste the `requestId` (response header `x-request-id`
-or the `requestId` field in the error body) — it lets us trace the request.
+or the `requestId` field in the error body). It lets us trace the request.
 
 **Environment**
 - Surface: (api.credda.io / credda.io / `@credda/js` / `@credda/cli` / `@credda/mcp-server` / other)
@@ -28,5 +28,5 @@ or the `requestId` field in the error body) — it lets us trace the request.
 **Anything else**
 Logs, screenshots, or context. Please redact secrets, API keys, and share tokens.
 
-> Security vulnerability? Do **not** file it here — see
+> Security vulnerability? Don't file it here. See
 > [SECURITY.md](https://github.com/Credda-io/.github/blob/main/SECURITY.md).
