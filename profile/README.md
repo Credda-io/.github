@@ -95,6 +95,12 @@ worth as much as the guarantees behind it.
 - **A third-party witness is required.** `isVerified` is never granted to a party
   vouching for itself. A bare payment isn't trust. A self-confirmed job isn't
   trust.
+- **An employer can't push a bad mark onto your portable record.** When a
+  business records a missed deadline or a breach against someone, that stays on
+  that business's own internal record. You see it, you're told about it, and you
+  can contest it — but it does not follow you to the next employer. Carrying
+  employer-furnished negatives between companies is a different product with
+  different obligations, and it's switched off until we can meet them.
 
 ## Build on Credda
 
