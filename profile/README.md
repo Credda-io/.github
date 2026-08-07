@@ -110,7 +110,7 @@ Everything is contract-first, described in
 
 | | |
 | --- | --- |
-| **SDKs** | [`@credda/js`](https://www.npmjs.com/package/@credda/js) for TypeScript, plus Python and Go clients |
+| **SDKs** | [`@credda/js`](https://www.npmjs.com/package/@credda/js) for TypeScript ([source](https://github.com/Credda-io/credda-js)) and [`credda-go`](https://github.com/Credda-io/credda-go) for Go. A Python client is on the way. |
 | **CLI** | [`@credda/cli`](https://www.npmjs.com/package/@credda/cli) to look up, verify, export, and report events |
 | **MCP server** | [`@credda/mcp-server`](https://www.npmjs.com/package/@credda/mcp-server), on npm and in the [MCP Registry](https://registry.modelcontextprotocol.io). Any MCP-aware agent can check a counterparty's record or present its own, mid-reasoning |
 | **Automation** | HMAC-signed outbound webhooks, continuous score monitors, and an n8n community node |
