@@ -1,6 +1,9 @@
-<div align="center">
-  <img src="banner.svg" alt="Credda: a portable, verified work record scored by a public formula" width="100%" />
-</div>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Credda-io/.github/main/profile/assets/credda-banner-dark.png">
+    <img alt="Credda - portable trust infrastructure" src="https://raw.githubusercontent.com/Credda-io/.github/main/profile/assets/credda-banner-light.png" width="100%">
+  </picture>
+</p>
 
 <p align="center">
   <a href="https://credda.io"><b>credda.io</b></a>
@@ -108,11 +111,14 @@ Everything is contract-first, described in
 [OpenAPI 3.1](https://api.credda.io/openapi.json) and rendered at
 [`/docs`](https://api.credda.io/docs).
 
+The JavaScript, CLI, and MCP packages are **open source under the MIT license,
+published on npm with build provenance**, and source-mirrored on GitHub.
+
 | | |
 | --- | --- |
-| **SDKs** | [`@credda/js`](https://www.npmjs.com/package/@credda/js) for TypeScript ([source](https://github.com/Credda-io/credda-js)) and [`credda-go`](https://github.com/Credda-io/credda-go) for Go. A Python client is on the way. |
-| **CLI** | [`@credda/cli`](https://www.npmjs.com/package/@credda/cli) to look up, verify, export, and report events |
-| **MCP server** | [`@credda/mcp-server`](https://www.npmjs.com/package/@credda/mcp-server), on npm and in the [MCP Registry](https://registry.modelcontextprotocol.io). Any MCP-aware agent can check a counterparty's record or present its own, mid-reasoning |
+| **SDKs** | [`@credda/js`](https://www.npmjs.com/package/@credda/js) for TypeScript and JavaScript, with typed client, React hooks, and offline credential verification ([source](https://github.com/Credda-io/credda-js)). [`credda-go`](https://github.com/Credda-io/credda-go) is a typed, stdlib-only client for Go. A Python client is in progress. |
+| **CLI** | [`@credda/cli`](https://www.npmjs.com/package/@credda/cli) to look up, verify, export, and report events from the terminal ([source](https://github.com/Credda-io/credda-cli)) |
+| **MCP server** | [`@credda/mcp-server`](https://www.npmjs.com/package/@credda/mcp-server), on npm and in the [MCP Registry](https://registry.modelcontextprotocol.io) ([source](https://github.com/Credda-io/credda-mcp)). Any MCP-aware agent can check a counterparty's record or present its own, mid-reasoning |
 | **Automation** | HMAC-signed outbound webhooks, continuous score monitors, and an n8n community node |
 | **Ingest** | `POST /events` and its batch form, a declarative field-mapping `/ingest`, and CSV `/imports` |
 
