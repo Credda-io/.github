@@ -2,9 +2,17 @@
 
 Thanks for your interest. This file is the org-wide default for repositories under
 [`Credda-io`](https://github.com/Credda-io). Credda's product source (`api`,
-`credda-backend`, `Credda`) is private and pre-launch right now, so most external
-contribution happens on the surfaces you can actually reach: the public SDKs, the
-CLI, the MCP server, and the developer documentation.
+`credda-backend`, `Credda`) is private, so most external contribution happens on
+the surfaces you can actually reach:
+
+- [`credda-js`](https://github.com/Credda-io/credda-js), the TypeScript and
+  JavaScript client
+- [`credda-go`](https://github.com/Credda-io/credda-go), the stdlib-only Go client
+- [`credda-cli`](https://github.com/Credda-io/credda-cli), the terminal client
+- [`credda-mcp`](https://github.com/Credda-io/credda-mcp), the MCP server
+- the developer documentation at [api.credda.io/docs](https://api.credda.io/docs)
+
+All four clients are MIT licensed.
 
 ## Ways to help
 
@@ -19,8 +27,8 @@ CLI, the MCP server, and the developer documentation.
 
 ## Before you open an issue
 
-- Search existing issues first. A quick 👍 on one that already exists helps us
-  prioritise.
+- Search existing issues first. A thumbs-up reaction on one that already exists
+  helps us prioritize.
 - Include the concrete details: what you called, what you expected, what actually
   happened, and the `requestId` from the response header or body if you have it.
   That id lets us trace a request end to end.
