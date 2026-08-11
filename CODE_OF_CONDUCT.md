@@ -13,7 +13,7 @@ pull requests, discussions, or email, we expect:
 - Graceful acceptance of a decision once it's been made.
 
 We won't tolerate harassment, personal attacks, discriminatory or demeaning
-language, sexualised content, intimidation, publishing others' private
+language, sexualized content, intimidation, publishing others' private
 information, or sustained disruption. This applies to everyone equally:
 contributors, maintainers, and the Credda team.
 
@@ -24,7 +24,7 @@ project or its community in public.
 
 ## Reporting
 
-Report unacceptable behaviour to
+Report unacceptable behavior to
 **[martin@credda.io](mailto:martin@credda.io?subject=Code%20of%20conduct)** with
 the subject "Code of conduct". It reaches the founder directly.
 

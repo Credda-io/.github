@@ -21,7 +21,7 @@ If it came from an API call, paste the `requestId` (response header `x-request-i
 or the `requestId` field in the error body). It lets us trace the request.
 
 **Environment**
-- Surface: (api.credda.io / credda.io / `@credda/js` / `@credda/cli` / `@credda/mcp-server` / other)
+- Surface: (api.credda.io / credda.io / backend.credda.io / `@credda/js` / `credda-go` / `@credda/cli` / `@credda/mcp-server` / other)
 - Version or package version:
 - OS / runtime (if relevant):
 

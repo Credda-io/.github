@@ -9,11 +9,25 @@ This policy is the org-wide default for every repository under
 
 ## Reporting a vulnerability
 
-Email [martin@credda.io](mailto:martin@credda.io?subject=Security%20disclosure)
+Email [security@credda.io](mailto:security@credda.io?subject=Security%20disclosure)
 with the subject "Security disclosure" and the details. If you'd rather, you can
 open a private
 [GitHub security advisory](https://docs.github.com/en/code-security/security-advisories)
 on the relevant repository instead.
+
+`security@credda.io` is a small internal group, not a personal mailbox. It
+accepts mail from outside the company and its archive is not readable outside
+that group, because a vulnerability report is the most sensitive mail we get.
+
+It is the same address we publish under RFC 9116, so you can confirm this file
+against the service itself rather than trusting a document in a repository:
+
+- [`credda.io/.well-known/security.txt`](https://credda.io/.well-known/security.txt)
+- [`api.credda.io/.well-known/security.txt`](https://api.credda.io/.well-known/security.txt)
+- [`credda.io/security`](https://credda.io/security), the policy page those files
+  point at
+
+If any of those disagrees with this file, trust the served `security.txt`.
 
 **Please don't report vulnerabilities through public GitHub issues, pull requests,
 discussions, or social media.** Give us a chance to fix an issue before it's
@@ -48,7 +62,8 @@ aspirational ones.
 - The scoring API and developer platform at `api.credda.io`.
 - The web application at `credda.io`.
 - The platform API at `backend.credda.io`.
-- Our published packages: `@credda/js`, `@credda/cli`, `@credda/mcp-server`.
+- Our published clients: `@credda/js`, `@credda/cli`, `@credda/mcp-server`, and
+  `credda-go`.
 - The credential fabric: issuance, signatures, revocation, disclosure scopes.
 
 We're especially interested in anything that could move or forge a score,
@@ -67,7 +82,7 @@ tenant and test-mode isolation.
   Those are welcome as normal issues, just not as vulnerability reports.
 - Anything that requires a user to disclose their own share link or credential.
 
-## Safe harbour
+## Safe harbor
 
 If you make a good-faith effort to follow this policy, we won't pursue or support
 legal action against you for your research. Acting in good faith means testing
@@ -76,7 +91,7 @@ modifying, or exfiltrating other people's data, not degrading the service for
 others, and giving us a reasonable window to remediate before public disclosure.
 
 If you're unsure whether something is in scope or in bounds, email
-**martin@credda.io** and ask first.
+**security@credda.io** and ask first.
 
 ## Our commitments
 
