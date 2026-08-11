@@ -1,8 +1,8 @@
 <div align="center">
   <br />
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Credda-io/.github/main/profile/assets/creddalockuplongdarktransparent.png">
-    <img alt="Credda" src="https://raw.githubusercontent.com/Credda-io/.github/main/profile/assets/creddalockuplonglighttransparent.png" width="400">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Credda-io/.github/main/profile/assets/creddaseallockupdarktransparent.png">
+    <img alt="Credda" src="https://raw.githubusercontent.com/Credda-io/.github/main/profile/assets/creddaseallockuplighttransparent.png" width="480">
   </picture>
   <br />
   <br />
@@ -370,8 +370,8 @@ says which channel handles what. Questions about your own record belong in
 <div align="center">
   <br />
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Credda-io/.github/main/profile/assets/creddadarkctransparent.png">
-    <img src="https://raw.githubusercontent.com/Credda-io/.github/main/profile/assets/creddalightctransparent.png" height="34" alt="" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Credda-io/.github/main/profile/assets/creddasealmarkdarktransparent.png">
+    <img src="https://raw.githubusercontent.com/Credda-io/.github/main/profile/assets/creddasealmarklighttransparent.png" height="46" alt="" />
   </picture>
   <br />
   <br />
