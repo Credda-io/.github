@@ -212,7 +212,7 @@ different score.
 ## The surface
 
 Credda is larger than the marketing site suggests. The platform API alone is
-**394 route handlers across 40 modules**, and the scoring service is a separate
+**488 route handlers across 52 modules**, and the scoring service is a separate
 codebase again.
 
 | | |
@@ -226,26 +226,34 @@ codebase again.
 | **Agent identity** | An agent acting for someone can carry and present a record of its own |
 
 <details>
-<summary><b>Where those 394 handlers are</b></summary>
+<summary><b>Where those 488 handlers are</b></summary>
 
 <br />
 
 | Module | Handlers |
 | --- | ---: |
-| `organizations` | 72 |
-| `support` | 52 |
-| `profiles` | 41 |
+| `organizations` | 116 |
+| `support` | 53 |
+| `profiles` | 51 |
 | `commitments` | 39 |
-| `profileClaims` | 18 |
+| `profileClaims` | 21 |
+| `trustGraph` | 16 |
 | `admin` | 14 |
 | `auth` | 13 |
 | `ingestion`, `invoices` | 11 each |
-| `tickets`, `trustGraph` | 10 each |
-| 29 further modules | 103 |
+| `tickets` | 10 |
+| 41 further modules | 133 |
 
-<sub>Counted from `src/routes` in the platform API, excluding tests. The scoring
-service, the credential fabric, the webhook layer and the MCP server are not in
-this count.</sub>
+<sub>Counted from `src/routes` in the platform API, excluding tests, with
+`organizations/` counted as the one module it is rather than as the fifteen files
+it was split into. The scoring service, the credential fabric, the webhook layer
+and the MCP server are not in this count.</sub>
+
+<sub>This read 394 across 40 until 2026-08-27. That figure was correct when it was
+taken and the API has grown since: `commitments`, `admin` and `auth` still count
+exactly what it recorded, while `organizations` went from 72 to 116 when it was
+refactored from one file into a directory. A number that only moves when somebody
+remembers to recount it is the kind this page should carry least comfortably.</sub>
 
 </details>
 
