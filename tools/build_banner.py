@@ -214,8 +214,8 @@ def t(text: str, cls: str = "", face: Face = MONO400) -> Run:
 # there will ever be, and it is a boundary rather than a boast: Credda proposes,
 # and a person merges.
 
-HEAD_1 = "Anyone can tell you it is broken."
-HEAD_2 = "Credda opens the pull request."
+HEAD_1 = "Finds it. Fixes it."
+HEAD_2 = "Proves it."
 
 STEPS = [
     "reproduce the failure",
@@ -550,8 +550,7 @@ TEMPLATE = (
     'xmlns:xlink="http://www.w3.org/1999/xlink" '
     'viewBox="0 0 {w} {h}" width="{w}" height="{h}" '
     'role="img" aria-labelledby="t d" fill="none">'
-    "<title id=\"t\">Credda &#8212; anyone can tell you it is broken; Credda "
-    "opens the pull request.</title>"
+    "<title id=\"t\">Credda &#8212; finds it, fixes it, proves it.</title>"
     "<desc id=\"d\">A terminal-style panel. A command, credda fix, runs against "
     "an issue; four checks resolve in turn &#8212; reproduce the failure, find "
     "what actually caused it, write the patch, prove it with a test &#8212; and "
