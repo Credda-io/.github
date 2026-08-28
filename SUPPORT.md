@@ -9,21 +9,22 @@ which door to knock on.
 | What you have | Where it goes |
 | --- | --- |
 | A security vulnerability | **Never a public issue.** See [SECURITY.md](./SECURITY.md), or email security@credda.io |
-| A bug in an SDK, the CLI, the MCP server, or an API response | A [GitHub issue](https://github.com/Credda-io) on the repository it affects, using the *Bug report* template |
-| A feature or endpoint request | A GitHub issue using the *Feature request* template |
-| A question about your own account, record, or billing | Email support@credda.io, or the help center at [credda.io/help-center](https://credda.io/help-center) |
-| Something wrong on your record that you want corrected | [credda.io/help-center](https://credda.io/help-center) has the correction routes. Do not open a public issue: it would put your record in a public thread |
-| "Is the API up?" | [credda.io/status](https://credda.io/status), and [`backend.credda.io/health/ready`](https://backend.credda.io/health/ready) for capability-level detail |
-| "How do I call this?" | The [API reference](https://api.credda.io/docs) and the [OpenAPI document](https://api.credda.io/openapi.json) |
+| A bug in the Action, a client, `ci-verdict` or `repro-check` | A [GitHub issue](https://github.com/Credda-io) on the repository it affects, using the *Bug report* template |
+| Credda behaved wrongly on one of your repositories | An issue on [`action`](https://github.com/Credda-io/action) with the run URL and the investigation id. The engine itself is private, so its issues are triaged from the launcher |
+| Credda reported something it could not reproduce, or reproduced it and named the wrong cause | Same place, and this is the most useful kind of report we get. Include what the real cause turned out to be |
+| A feature or capability request | A GitHub issue using the *Feature request* template |
+| A question about billing or your account | Email support@credda.io |
+| A defect Credda found in your own code | That one is yours. Bring it to us only if Credda's handling of it was wrong or unsafe |
 
 ## Before you open an issue
 
-Include what you called, what you expected, what actually happened, and the
-`requestId` from the response header `x-request-id` or the `requestId` field in
-the error body. That id lets us trace one request end to end, which is usually
-the difference between a same-day answer and a week of guessing.
+Include what you ran, what you expected, what actually happened, and the
+investigation id if there is one. For an Action run, the run URL is worth more
+than a description of it.
 
-Please redact API keys, share tokens, and anyone's personal data before you post.
+Please redact secrets, tokens, and anything from a private repository that you
+would not want in a public thread. If a useful report cannot be written without
+that material, email it instead.
 
 ## What we can promise
 
@@ -34,7 +35,6 @@ here.
 
 ## What we will not do
 
-We will not tell you whether to hire, lend to, or trust a person, and we will not
-adjust anyone's score by hand. Both are refused by design, not by policy, and
-asking through a support channel does not route around it. See the invariants in
-[CONTRIBUTING.md](./CONTRIBUTING.md).
+We will not merge anything. Credda proposes a change and a human decides, on
+your repositories and on ours, and asking through a support channel does not
+route around it. See the invariants in [CONTRIBUTING.md](./CONTRIBUTING.md).

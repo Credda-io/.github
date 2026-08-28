@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Something in the API, an SDK, the CLI, or the MCP server isn't working
+about: Something in the Action, a client, or one of the tools isn't working
 title: "[bug] "
 labels: bug
 ---
@@ -16,17 +16,23 @@ What you expected to happen instead.
 2.
 3.
 
-**Request ID**
-If it came from an API call, paste the `requestId` (response header `x-request-id`
-or the `requestId` field in the error body). It lets us trace the request.
+**The run**
+If this came from a Credda run, paste the Actions run URL and the investigation
+id. They let us trace one run end to end, which is usually the difference
+between a same-day answer and a week of guessing.
+
+**If Credda got the finding wrong**
+What it reported, and what the cause actually turned out to be. This is the most
+useful kind of report we get.
 
 **Environment**
-- Surface: (api.credda.io / credda.io / backend.credda.io / `@credda/js` / `credda-go` / `@credda/cli` / `@credda/mcp-server` / other)
+- Surface: (`action` / `credda-cli` / `credda-js` / `credda-go` / `credda-mcp` / `ci-verdict` / `repro-check` / other)
 - Version or package version:
 - OS / runtime (if relevant):
 
 **Anything else**
-Logs, screenshots, or context. Please redact secrets, API keys, and share tokens.
+Logs, screenshots, or context. Please redact secrets, tokens, and anything from
+a private repository you would not want in a public thread.
 
 > Security vulnerability? Don't file it here. See
 > [SECURITY.md](https://github.com/Credda-io/.github/blob/main/SECURITY.md).

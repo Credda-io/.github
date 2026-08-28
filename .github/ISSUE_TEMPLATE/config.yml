@@ -6,12 +6,9 @@ contact_links:
   - name: Where to get help
     url: https://github.com/Credda-io/.github/blob/main/SUPPORT.md
     about: Which channel handles which kind of question.
-  - name: Developer documentation
-    url: https://api.credda.io/docs
-    about: API reference, the published scoring model, and guides.
-  - name: Account, record, or billing help
-    url: https://credda.io/help-center
-    about: Anything about your own record belongs here, not in a public issue.
-  - name: Service status
-    url: https://credda.io/status
-    about: Latency and availability, plus per-capability readiness.
+  - name: Running Credda on your repository
+    url: https://github.com/Credda-io/action
+    about: Setup, the permission grant, and the security shape of the Action.
+  - name: How Credda is measured
+    url: https://github.com/Credda-io/bench
+    about: The labelled corpus and the scorecards every published number cites.
