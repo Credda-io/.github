@@ -40,5 +40,5 @@
 
 <a href="https://credda.io">
   <img src="./banner.svg" width="880"
-       alt="Credda. Anyone can tell you it is broken; Credda opens the pull request. Credda finds the security risks and the bugs in a company's production and QA environments and opens the pull request that fixes them: it runs in your own CI, reproduces the reported failure, finds what actually caused it, writes the patch, and proves it with a test that fails before and passes after. A person reviews the diff; Credda never merges. The reporting stages ship today and the fix stage lands with the model-backed release.">
+       alt="Credda. Anyone can tell you it is broken; Credda opens the pull request. Credda finds the security risks and the bugs in a company's production and QA environments and opens the pull request that fixes them: it runs in your own CI, reproduces the reported failure, finds what actually caused it, writes the patch, and proves it with a test that fails before and passes after. A person reviews the diff; Credda never merges. Every stage runs today, including the fix, and a patch is only ever published when a test proves it.">
 </a>
