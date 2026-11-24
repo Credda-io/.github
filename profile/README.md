@@ -40,5 +40,5 @@
 
 <a href="https://credda.io">
   <img src="./banner.svg" width="880"
-       alt="Credda. Security and Quality Assurance for the Agentic Era. Findings proven by exploit, fixes proven by test. Security: no exploit, no finding. A suspected vulnerability counts only when a proof of concept fires a deterministic check in a sandbox on the vulnerable code and is silent on the fixed code. QA: no fix without a test. Credda runs in your own CI, reproduces the reported failure, finds what actually caused it, writes the patch, and proves it with a test that fails before and passes after. When it cannot reproduce a report it says so and changes nothing. A person reviews the diff; Credda proposes and never merges.">
+       alt="Credda. Cybersecurity and Quality Assurance for the Agentic Era. Findings proven by exploit, fixes proven by test. Security: no exploit, no finding. A suspected vulnerability counts only when a proof of concept fires a deterministic check in a sandbox on the vulnerable code and is silent on the fixed code. QA: no fix without a test. Credda runs in your own CI, reproduces the reported failure, finds what actually caused it, writes the patch, and proves it with a test that fails before and passes after. When it cannot reproduce a report it says so and changes nothing. A person reviews the diff; Credda proposes and never merges.">
 </a>
