@@ -210,12 +210,17 @@ def t(text: str, cls: str = "", face: Face = MONO400) -> Run:
 # alt text, which is one line to edit and needs no regeneration. That split is
 # the whole reason this banner carries no dated claim.
 #
+# The third version, 2026-11-23, carries the company line: security and QA
+# engineering for AI-native software, two co-equal practices settled by
+# execution. The headline is the approved short line, one practice per line,
+# so neither reads as the lesser of the two.
+#
 # The closing line is the one invariant that holds in every version of Credda
 # there will ever be, and it is a boundary rather than a boast: Credda proposes,
 # and a person merges.
 
-HEAD_1 = "Finds it. Fixes it."
-HEAD_2 = "Proves it."
+HEAD_1 = "Findings proven by exploit."
+HEAD_2 = "Fixes proven by test."
 
 STEPS = [
     "reproduce the failure",
@@ -260,7 +265,7 @@ def build() -> str:
     body.append(draw([t("CREDDA", "fg", MONO600)], PAD + 20, 36, 14, track=2.4))
     body.append(
         draw(
-            [t("SECURITY RISKS AND BUGS, FIXED", "dim")],
+            [t("SECURITY AND QA ENGINEERING FOR AI-NATIVE SOFTWARE", "dim")],
             RIGHT,
             36,
             11.5,
@@ -271,10 +276,10 @@ def build() -> str:
     body.append(f'<path class="rule" d="M1 {HEAD_RULE_Y}.5H{W - 1}"/>')
 
     # -------------------------------------------------------------- headline
-    # Two flat colours and no gradient anywhere: the turn between the lines is
-    # carried by value alone, which is the only emphasis a drafting sheet has.
+    # One flat colour for both lines since 2026-11-23: each line is one of two
+    # co-equal practices, so neither is set back in value against the other.
     body.append(
-        draw([t(HEAD_1, "head-a", SANS600)], PAD, HEAD_BASE_1, HEAD_SIZE,
+        draw([t(HEAD_1, "head-b", SANS600)], PAD, HEAD_BASE_1, HEAD_SIZE,
              wrap='class="a-h1"')
     )
     body.append(
@@ -550,10 +555,11 @@ TEMPLATE = (
     'xmlns:xlink="http://www.w3.org/1999/xlink" '
     'viewBox="0 0 {w} {h}" width="{w}" height="{h}" '
     'role="img" aria-labelledby="t d" fill="none">'
-    "<title id=\"t\">Credda &#8212; finds it, fixes it, proves it.</title>"
+    "<title id=\"t\">Credda. Security and QA engineering for AI-native "
+    "software. Findings proven by exploit, fixes proven by test.</title>"
     "<desc id=\"d\">A terminal-style panel. A command, credda fix, runs against "
-    "an issue; four checks resolve in turn &#8212; reproduce the failure, find "
-    "what actually caused it, write the patch, prove it with a test &#8212; and "
+    "an issue. Four checks resolve in turn: reproduce the failure, find "
+    "what actually caused it, write the patch, prove it with a test. Then "
     "a result panel settles on PULL REQUEST, carrying the patch and the test "
     "that proves it.</desc>"
     "<style>{css}</style>"
