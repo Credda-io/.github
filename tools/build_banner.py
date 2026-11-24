@@ -210,8 +210,8 @@ def t(text: str, cls: str = "", face: Face = MONO400) -> Run:
 # alt text, which is one line to edit and needs no regeneration. That split is
 # the whole reason this banner carries no dated claim.
 #
-# The third version, 2026-11-23, carries the company line: security and QA
-# engineering for AI-native software, two co-equal practices settled by
+# The third version, 2026-11-23, carries the company line: Security and
+# Quality Assurance for the Agentic Era, two co-equal practices settled by
 # execution. The headline is the approved short line, one practice per line,
 # so neither reads as the lesser of the two.
 #
@@ -265,7 +265,7 @@ def build() -> str:
     body.append(draw([t("CREDDA", "fg", MONO600)], PAD + 20, 36, 14, track=2.4))
     body.append(
         draw(
-            [t("SECURITY AND QA ENGINEERING FOR AI-NATIVE SOFTWARE", "dim")],
+            [t("SECURITY AND QUALITY ASSURANCE FOR THE AGENTIC ERA", "dim")],
             RIGHT,
             36,
             11.5,
@@ -555,8 +555,8 @@ TEMPLATE = (
     'xmlns:xlink="http://www.w3.org/1999/xlink" '
     'viewBox="0 0 {w} {h}" width="{w}" height="{h}" '
     'role="img" aria-labelledby="t d" fill="none">'
-    "<title id=\"t\">Credda. Security and QA engineering for AI-native "
-    "software. Findings proven by exploit, fixes proven by test.</title>"
+    "<title id=\"t\">Credda. Security and Quality Assurance for the "
+    "Agentic Era. Findings proven by exploit, fixes proven by test.</title>"
     "<desc id=\"d\">A terminal-style panel. A command, credda fix, runs against "
     "an issue. Four checks resolve in turn: reproduce the failure, find "
     "what actually caused it, write the patch, prove it with a test. Then "
