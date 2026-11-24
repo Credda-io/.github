@@ -210,17 +210,19 @@ def t(text: str, cls: str = "", face: Face = MONO400) -> Run:
 # alt text, which is one line to edit and needs no regeneration. That split is
 # the whole reason this banner carries no dated claim.
 #
-# The third version, 2026-11-23, carries the company line: Cybersecurity and
-# Quality Assurance for the Agentic Era, two co-equal practices settled by
-# execution. The headline is the approved short line, one practice per line,
-# so neither reads as the lesser of the two.
+# The third version, 2026-11-23, carries the company line as the headline:
+# Cybersecurity and Quality Assurance for the Agentic Era, two co-equal
+# practices settled by execution. The proof line sits under it as the
+# supporting line. The header strip no longer carries a tagline, because it
+# would only repeat the headline.
 #
 # The closing line is the one invariant that holds in every version of Credda
 # there will ever be, and it is a boundary rather than a boast: Credda proposes,
 # and a person merges.
 
-HEAD_1 = "Findings proven by exploit."
-HEAD_2 = "Fixes proven by test."
+HEAD_1 = "Cybersecurity and Quality Assurance"
+HEAD_2 = "for the Agentic Era"
+SUB = "Findings proven by exploit. Fixes proven by test."
 
 STEPS = [
     "reproduce the failure",
@@ -236,9 +238,11 @@ PAD = 32
 RIGHT = W - PAD
 
 HEAD_RULE_Y = 56
-HEAD_SIZE = 42
-HEAD_BASE_1 = 134
-HEAD_BASE_2 = 184
+HEAD_SIZE = 40
+HEAD_BASE_1 = 110
+HEAD_BASE_2 = 158
+SUB_SIZE = 15
+SUB_BASE = 194
 MID_RULE_Y = 216
 
 CMD_BASE = 256
@@ -263,16 +267,6 @@ def build() -> str:
         f'<rect class="mark" x="{PAD}" y="27" width="9" height="9"/>'
     )
     body.append(draw([t("CREDDA", "fg", MONO600)], PAD + 20, 36, 14, track=2.4))
-    body.append(
-        draw(
-            [t("CYBERSECURITY AND QUALITY ASSURANCE FOR THE AGENTIC ERA", "dim")],
-            RIGHT,
-            36,
-            11.5,
-            track=1.8,
-            anchor="end",
-        )
-    )
     body.append(f'<path class="rule" d="M1 {HEAD_RULE_Y}.5H{W - 1}"/>')
 
     # -------------------------------------------------------------- headline
@@ -285,6 +279,9 @@ def build() -> str:
     body.append(
         draw([t(HEAD_2, "head-b", SANS600)], PAD, HEAD_BASE_2, HEAD_SIZE,
              wrap='class="a-h2"')
+    )
+    body.append(
+        draw([t(SUB, "mid")], PAD, SUB_BASE, SUB_SIZE, wrap='class="a-h2"')
     )
     body.append(f'<path class="rule" d="M1 {MID_RULE_Y}.5H{W - 1}"/>')
 
